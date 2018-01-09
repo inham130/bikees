@@ -1,0 +1,41 @@
+@mixin responsive-sprite($image-width, $image-height, $sprite-width, $sprite-height, $position-x, $position-y) {
+    @if $sprite-width - $image-width == 0 {
+        $sprite-width: $sprite-width+1;
+    }
+    @if $sprite-height - $image-height == 0 {
+        $sprite-height: $sprite-height+1;
+    }
+
+    $pos-x: $position-x/($sprite-width - $image-width)*100%;
+    $pos-y: $position-y/($sprite-height - $image-height)*100%;
+   
+    $size-x: $sprite-width/$image-width*100%;
+    $size-y: $sprite-height/$image-height*100%;
+  
+    background-size: $size-x $size-y;
+    background-position: $pos-x $pos-y;
+}
+
+@mixin desctop {
+    @media screen and (max-width: 1200px){
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media screen and (max-width: 992px){
+        @content;
+    }
+}
+
+@mixin tablets {
+    @media screen and (max-width: 750px){
+        @content;
+    }
+}
+
+@mixin phones {
+    @media screen and (max-width: 480px){
+        @content;
+    }
+}

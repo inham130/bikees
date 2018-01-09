@@ -1,0 +1,39 @@
+$fa-font-path: "~font-awesome/fonts";
+@import '~font-awesome/scss/font-awesome.scss';
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300");
+
+@font-face {
+    font-family: 'high-tide';
+    src: url('../../assets/fonts/HighTide.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DYMAXION';
+    src: url('../../assets/fonts/DymaxionScript.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Odin-Rounded-Bold';
+    src: url('../../assets/fonts/Odin Rounded - Bold.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Odin-Rounded-Regular';
+    src: url('../../assets/fonts/Odin Rounded - Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Odin-Rounded-Light';
+    src: url('../../assets/fonts/Odin Rounded - Light.otf');
+    font-weight: normal;
+    font-style: normal;
+}
